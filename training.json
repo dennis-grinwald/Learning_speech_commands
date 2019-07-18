@@ -1,0 +1,16 @@
+{
+  "epochs": 30,
+  "batch_size": 10,
+  "learning_rate": 0.01,
+  "gradient_clip": 1,
+
+  "kernel_size": 10,
+  "stride": 1,
+  "padding": 0,
+  "channels_out": 3,
+
+  "hidden_layer_1": 128,
+  "hidden_layer_2": 128,
+
+  "fc1": 50
+}
