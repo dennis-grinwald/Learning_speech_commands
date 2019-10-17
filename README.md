@@ -1,6 +1,9 @@
 ## A convolutional recurrent neural network(CRNN) for source location mapping of spoken words
-We provide an end-to-end solution of a convolutional recurrent neural network, that maps sound sequences of spoken words to the corresponding written word labels. 
-Having the trained network, we extract the activations of the neurons in the single layers, to map them to source locations in the human brain. 
+This repo provides an end-to-end solution of a convolutional recurrent neural network, that maps sound sequences of spoken words to the corresponding written word labels. 
+Having the trained network, I've extracted the activations of the neurons in the single layers, to map them to source locations in the human brain. 
+
+## Architecture of the LSTM
+![Alt text](bci_network.png?raw=true "")
 
 # Getting started
 In order to get started, download the data from https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data and place it into:
@@ -20,9 +23,9 @@ So far the best model has the following performance:
 IMPORTANT: Make sure, that you have the data downloaded and it is residing in the data/ in the root directory. It should be structured as follows: data/marvin/wav-file-1 etc. Though you can easily adjust the data paths in the "training.py" or "simulate_activity.py" scripts if needed want.
 
 ## Training
-We organized the training procedure of the network as easy as possible. In order to get it running the user just needs to adjust the hyperparameters in the "training.json" file.
+The training procedure of the network is organized as easy as possible. In order to get it running the user just needs to adjust the hyperparameters in the "training.json" file.
 These include batch size, hidden neurons, kernel size etc.
-However we provide an already pretrained model. Just make sure to have the data in the root directory of this project as described above.
+However here I provide an already pretrained model. Just make sure to have the data in the root directory of this project as described above.
 
 ## Simulating source activity
 
